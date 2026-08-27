@@ -13,7 +13,7 @@ const config = {
 
   // GitHub Pages deployment
   url: 'https://VSummarydocs.github.io',
-  baseUrl: '/ams-user-guide/',
+  baseUrl: '/',
 
   organizationName: 'VSummarydocs',
   projectName: 'ams-user-guide',
