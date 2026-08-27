@@ -573,3 +573,133 @@ article {
   transform: translateY(-3px) !important;
   box-shadow: 0 8px 24px rgba(99, 102, 241, 0.45) !important;
 }
+
+/* ═══════════════════════════════════════════════
+   GENERATED INDEX CARDS — Premium Redesign
+   ═══════════════════════════════════════════════ */
+
+/* Card container */
+.card {
+  position: relative;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 16px !important;
+  padding: 28px 24px 24px !important;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  overflow: hidden;
+  height: 100%;
+  text-decoration: none !important;
+}
+
+/* Gradient top border accent */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #6366f1, #818cf8, #a5b4fc);
+  border-radius: 16px 16px 0 0;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) !important;
+  border-color: #c7d2fe !important;
+  box-shadow:
+    0 12px 40px rgba(99, 102, 241, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.04) !important;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Card title */
+.card h2,
+.card [class*="cardTitle"] {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  margin: 0 0 10px 0 !important;
+  letter-spacing: -0.01em;
+  line-height: 1.4 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+}
+
+.card:hover h2,
+.card:hover [class*="cardTitle"] {
+  color: #6366f1 !important;
+}
+
+/* Card description */
+.card p,
+.card [class*="cardDescription"] {
+  font-size: 13.5px !important;
+  color: #64748b !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  -webkit-line-clamp: unset !important;
+}
+
+/* Arrow icon on hover */
+.card::after {
+  content: '→';
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  color: #c7d2fe;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateX(-8px);
+}
+
+.card:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+  color: #6366f1;
+}
+
+/* ─── Dark Mode Cards ─── */
+[data-theme='dark'] .card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+[data-theme='dark'] .card:hover {
+  border-color: rgba(99, 102, 241, 0.4) !important;
+  box-shadow:
+    0 12px 40px rgba(99, 102, 241, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme='dark'] .card h2,
+[data-theme='dark'] .card [class*="cardTitle"] {
+  color: #f1f5f9 !important;
+}
+
+[data-theme='dark'] .card:hover h2,
+[data-theme='dark'] .card:hover [class*="cardTitle"] {
+  color: #a5b4fc !important;
+}
+
+[data-theme='dark'] .card p,
+[data-theme='dark'] .card [class*="cardDescription"] {
+  color: #94a3b8 !important;
+}
+
+[data-theme='dark'] .card::after {
+  color: #475569;
+}
+
+[data-theme='dark'] .card:hover::after {
+  color: #a5b4fc;
+}
