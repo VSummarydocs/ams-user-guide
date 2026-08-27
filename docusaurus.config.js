@@ -12,10 +12,10 @@ const config = {
   },
 
   // GitHub Pages deployment
-  url: 'https://neverfinal01.github.io',
+  url: 'https://VSummarydocs.github.io',
   baseUrl: '/ams-user-guide/',
 
-  organizationName: 'neverfinal01',
+  organizationName: 'VSummarydocs',
   projectName: 'ams-user-guide',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
