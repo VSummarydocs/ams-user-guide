@@ -3,7 +3,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'QLTS — Hướng dẫn sử dụng',
+  title: 'QLTS - Hướng dẫn sử dụng',
   tagline: 'Tài liệu hướng dẫn sử dụng hệ thống Quản lý Tài sản (AMS Desk)',
   favicon: 'img/ams-logo.ico',
 
@@ -12,7 +12,7 @@ const config = {
   },
 
   // GitHub Pages deployment
-  url: 'https://VSummarydocs.github.io',
+  url: 'https://vsummarydocs.github.io',
   baseUrl: '/ams-user-guide/',
 
   organizationName: 'VSummarydocs',
@@ -44,6 +44,19 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: 'docs',
+          exclude: [
+            '00-getting-started/**',
+            '01-dashboard/**',
+            '02-acquisition/**',
+            '03-asset/**',
+            '04-tool/**',
+            '05-report/**',
+            '06-system/**',
+            '07-workflows/**',
+            '08-appendix/**',
+            'README.md',
+            '_sidebar.md',
+          ],
         },
         blog: false,
         theme: {

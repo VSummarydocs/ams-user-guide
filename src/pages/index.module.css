@@ -1,0 +1,475 @@
+.home {
+  --home-bg: #f8fafc;
+  --home-surface: #ffffff;
+  --home-surface-soft: #eef2ff;
+  --home-text: #0f172a;
+  --home-muted: #475569;
+  --home-border: #dbe3ef;
+  --home-accent: #4f46e5;
+  --home-accent-strong: #3730a3;
+  --home-shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+
+  min-height: calc(100dvh - var(--ifm-navbar-height));
+  background:
+    linear-gradient(135deg, rgba(238, 242, 255, 0.85), rgba(248, 250, 252, 0) 44%),
+    var(--home-bg);
+  color: var(--home-text);
+}
+
+[data-theme='dark'] .home {
+  --home-bg: #101827;
+  --home-surface: #172033;
+  --home-surface-soft: #1f2a44;
+  --home-text: #f8fafc;
+  --home-muted: #cbd5e1;
+  --home-border: #334155;
+  --home-accent: #a5b4fc;
+  --home-accent-strong: #c7d2fe;
+  --home-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+
+  background:
+    linear-gradient(135deg, rgba(79, 70, 229, 0.16), rgba(16, 24, 39, 0) 42%),
+    var(--home-bg);
+}
+
+.hero,
+.summary,
+.capabilities,
+.workflow,
+.roles {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  gap: 48px;
+  align-items: center;
+  padding: 88px 0 52px;
+}
+
+.heroCopy {
+  max-width: 620px;
+}
+
+.kicker {
+  margin: 0 0 14px;
+  color: var(--home-accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  max-width: 12ch;
+  color: var(--home-text);
+  font-size: clamp(2.8rem, 6vw, 5.8rem);
+  font-weight: 850;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+}
+
+.heroText {
+  max-width: 58ch;
+  margin: 24px 0 0;
+  color: var(--home-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 0 18px;
+  font-weight: 750;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.primaryButton {
+  background: var(--home-accent-strong);
+  color: #ffffff;
+  border: 1px solid var(--home-accent-strong);
+}
+
+.primaryButton:hover {
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--home-text);
+  border: 1px solid var(--home-border);
+}
+
+[data-theme='dark'] .secondaryButton {
+  background: rgba(15, 23, 42, 0.24);
+}
+
+.secondaryButton:hover {
+  color: var(--home-accent-strong);
+  border-color: var(--home-accent);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.primaryButton:active,
+.secondaryButton:active {
+  transform: translateY(1px);
+}
+
+.heroMedia {
+  position: relative;
+}
+
+.heroMedia::before {
+  position: absolute;
+  inset: 28px -18px -20px 22px;
+  content: '';
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.18), rgba(16, 185, 129, 0.14));
+}
+
+.heroMedia img {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: left top;
+  border: 1px solid var(--home-border);
+  border-radius: 16px;
+  box-shadow: var(--home-shadow);
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--home-border);
+  border-bottom: 1px solid var(--home-border);
+}
+
+.summary div {
+  padding: 24px 28px;
+}
+
+.summary div + div {
+  border-left: 1px solid var(--home-border);
+}
+
+.summary strong,
+.summary span {
+  display: block;
+}
+
+.summary strong {
+  color: var(--home-text);
+  font-size: 1rem;
+}
+
+.summary span {
+  margin-top: 6px;
+  color: var(--home-muted);
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+
+.capabilities {
+  padding: 78px 0 34px;
+}
+
+.sectionIntro {
+  max-width: 720px;
+}
+
+.sectionIntro h2,
+.workflowCopy h2,
+.roles h2 {
+  margin: 0;
+  color: var(--home-text);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 820;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.sectionIntro p,
+.workflowCopy p,
+.roles p {
+  max-width: 64ch;
+  margin: 16px 0 0;
+  color: var(--home-muted);
+  line-height: 1.75;
+}
+
+.capabilityGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.capability {
+  min-height: 210px;
+  padding: 28px;
+  border: 1px solid var(--home-border);
+  border-radius: 14px;
+  background: var(--home-surface);
+}
+
+.capability:nth-child(1) {
+  grid-row: span 2;
+  background:
+    linear-gradient(135deg, rgba(79, 70, 229, 0.12), rgba(255, 255, 255, 0) 58%),
+    var(--home-surface);
+}
+
+[data-theme='dark'] .capability:nth-child(1) {
+  background:
+    linear-gradient(135deg, rgba(129, 140, 248, 0.16), rgba(23, 32, 51, 0) 58%),
+    var(--home-surface);
+}
+
+.capability span {
+  color: var(--home-accent);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.capability h3 {
+  margin: 38px 0 0;
+  color: var(--home-text);
+  font-size: 1.35rem;
+  line-height: 1.22;
+}
+
+.capability p {
+  margin: 12px 0 0;
+  color: var(--home-muted);
+  line-height: 1.7;
+}
+
+.workflow {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: 48px;
+  align-items: start;
+  padding: 62px 0;
+}
+
+.workflowList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  counter-reset: workflow;
+  list-style: none;
+}
+
+.workflowList li {
+  counter-increment: workflow;
+  display: flex;
+  min-height: 74px;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid var(--home-border);
+  border-radius: 14px;
+  background: var(--home-surface);
+  padding: 16px 18px;
+  color: var(--home-text);
+  font-weight: 700;
+}
+
+.workflowList li::before {
+  content: counter(workflow);
+  display: inline-grid;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--home-surface-soft);
+  color: var(--home-accent-strong);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+}
+
+.roles {
+  display: grid;
+  grid-template-columns: 1fr 0.78fr;
+  gap: 18px;
+  padding: 24px 0 96px;
+}
+
+.rolesPanel,
+.docsPanel {
+  border: 1px solid var(--home-border);
+  border-radius: 16px;
+  background: var(--home-surface);
+  padding: 34px;
+}
+
+.docsPanel {
+  background: var(--home-surface-soft);
+}
+
+.roleList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.roleList span {
+  border: 1px solid var(--home-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.62);
+  padding: 9px 13px;
+  color: var(--home-text);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+[data-theme='dark'] .roleList span {
+  background: rgba(15, 23, 42, 0.24);
+}
+
+.docsPanel .primaryButton {
+  margin-top: 26px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .heroCopy,
+  .heroMedia,
+  .summary,
+  .capability,
+  .workflow,
+  .roles {
+    animation: homeEnter 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .heroMedia {
+    animation-delay: 90ms;
+  }
+
+  .summary,
+  .capability:nth-child(1),
+  .workflow,
+  .roles {
+    animation-delay: 140ms;
+  }
+}
+
+@keyframes homeEnter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 996px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 58px;
+  }
+
+  .hero h1 {
+    max-width: 13ch;
+  }
+
+  .summary,
+  .capabilityGrid,
+  .workflow,
+  .roles {
+    grid-template-columns: 1fr;
+  }
+
+  .summary div + div {
+    border-left: 0;
+    border-top: 1px solid var(--home-border);
+  }
+
+  .capability:nth-child(1) {
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero,
+  .summary,
+  .capabilities,
+  .workflow,
+  .roles {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .hero {
+    gap: 30px;
+    padding: 42px 0 34px;
+  }
+
+  .hero h1 {
+    font-size: 2.75rem;
+  }
+
+  .heroText {
+    font-size: 1rem;
+  }
+
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .heroMedia::before {
+    inset: 18px -8px -12px 12px;
+    border-radius: 16px;
+  }
+
+  .heroMedia img,
+  .rolesPanel,
+  .docsPanel,
+  .capability,
+  .workflowList li {
+    border-radius: 12px;
+  }
+
+  .summary div,
+  .capability,
+  .rolesPanel,
+  .docsPanel {
+    padding: 22px;
+  }
+
+  .workflowList {
+    grid-template-columns: 1fr;
+  }
+}
