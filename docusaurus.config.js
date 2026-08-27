@@ -147,7 +147,7 @@ const config = {
             ],
           },
         ],
-        copyright: `AMS Desk · Phiên bản v1.8.4 · © ${new Date().getFullYear()} VFast Software`,
+        copyright: `AMS Desk · Phiên bản v1.8.4`,
       },
 
       prism: {
