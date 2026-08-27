@@ -192,7 +192,7 @@
 }
 
 .capabilities {
-  padding: 78px 0 34px;
+  padding: 62px 0 28px;
 }
 
 .sectionIntro {
@@ -221,50 +221,75 @@
 
 .capabilityGrid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 16px;
-  margin-top: 34px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
 }
 
 .capability {
-  min-height: 210px;
-  padding: 28px;
+  min-height: 172px;
+  padding: 22px 24px;
   border: 1px solid var(--home-border);
-  border-radius: 14px;
-  background: var(--home-surface);
-}
-
-.capability:nth-child(1) {
-  grid-row: span 2;
+  border-radius: 12px;
   background:
-    linear-gradient(135deg, rgba(79, 70, 229, 0.12), rgba(255, 255, 255, 0) 58%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(248, 250, 252, 0.54)),
     var(--home-surface);
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.055);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
-[data-theme='dark'] .capability:nth-child(1) {
+.capability:hover {
+  border-color: rgba(79, 70, 229, 0.34);
+  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+}
+
+[data-theme='dark'] .capability {
   background:
-    linear-gradient(135deg, rgba(129, 140, 248, 0.16), rgba(23, 32, 51, 0) 58%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.78), rgba(15, 23, 42, 0.32)),
     var(--home-surface);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.24);
 }
 
-.capability span {
+.capabilityMeta {
+  display: flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.capabilityMeta span {
   color: var(--home-accent);
   font-family: var(--ifm-font-family-monospace);
-  font-size: 0.86rem;
+  font-size: 0.78rem;
   font-weight: 700;
 }
 
+.capabilityMeta small {
+  border: 1px solid rgba(79, 70, 229, 0.14);
+  border-radius: 999px;
+  background: var(--home-surface-soft);
+  color: var(--home-accent-strong);
+  padding: 5px 9px;
+  font-size: 0.72rem;
+  font-weight: 760;
+  line-height: 1;
+}
+
 .capability h3 {
-  margin: 38px 0 0;
+  margin: 24px 0 0;
   color: var(--home-text);
-  font-size: 1.35rem;
+  font-size: clamp(1.08rem, 1.4vw, 1.28rem);
   line-height: 1.22;
 }
 
 .capability p {
-  margin: 12px 0 0;
+  max-width: 58ch;
+  margin: 10px 0 0;
   color: var(--home-muted);
-  line-height: 1.7;
+  font-size: 0.97rem;
+  line-height: 1.62;
 }
 
 .workflow {
@@ -412,9 +437,6 @@
     border-top: 1px solid var(--home-border);
   }
 
-  .capability:nth-child(1) {
-    grid-row: auto;
-  }
 }
 
 @media (max-width: 640px) {

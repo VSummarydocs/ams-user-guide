@@ -6,18 +6,22 @@ import styles from './index.module.css';
 
 const capabilities = [
   {
+    label: 'Vận hành',
     title: 'Quản lý vòng đời tài sản',
     text: 'Theo dõi tài sản từ đề xuất mua, tiếp nhận, bàn giao, điều chuyển, sửa chữa, kiểm kê đến thanh lý.',
   },
   {
+    label: 'Dữ liệu',
     title: 'Dữ liệu tập trung',
     text: 'Chuẩn hóa hồ sơ tài sản, phòng ban, người sử dụng, trạng thái, nguyên giá và giá trị còn lại.',
   },
   {
+    label: 'Kiểm soát',
     title: 'Phân quyền theo vai trò',
     text: 'Mỗi người dùng chỉ nhìn thấy và thao tác đúng phạm vi được cấp quyền trong hệ thống.',
   },
   {
+    label: 'Báo cáo',
     title: 'Báo cáo nhanh',
     text: 'Tổng hợp dữ liệu và xuất báo cáo Excel phục vụ quản lý, kế toán, kiểm kê và ra quyết định.',
   },
@@ -100,7 +104,10 @@ export default function Home() {
           <div className={styles.capabilityGrid}>
             {capabilities.map((item, index) => (
               <article className={styles.capability} key={item.title}>
-                <span>{String(index + 1).padStart(2, '0')}</span>
+                <div className={styles.capabilityMeta}>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <small>{item.label}</small>
+                </div>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </article>
