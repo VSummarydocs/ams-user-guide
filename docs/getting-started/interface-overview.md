@@ -49,7 +49,7 @@ Nằm ở trên cùng màn hình, gồm:
 | 📈 **Báo cáo** | Trung tâm báo cáo, xuất Excel | Giám đốc, Kế toán TS |
 | ⚙️ **Hệ thống** | Nhà cung cấp · Loại TS · Danh mục · Phòng ban · Tài khoản · Thông báo · Cấu hình | Tùy quyền |
 
-:::tip Mẹo
+:::tip[Mẹo]
 Menu chỉ hiển thị những chức năng mà bạn có quyền sử dụng. Nếu không thấy mục nào đó, hãy liên hệ quản trị viên để kiểm tra.
 :::
 

@@ -84,7 +84,7 @@ Khi phát hiện kết quả tính hao mòn **không chính xác** (do thông ti
 | 4 | **Chỉnh sửa thông tin** | Cập nhật lại thông tin tài sản nếu cần (nguyên giá, số năm sử dụng...) |
 | 5 | **Tính lại** | Tạo phiếu tính hao mòn mới theo quy trình ở trên |
 
-:::warning Lưu ý
+:::warning[Lưu ý]
 Khi xóa phiếu tính hao mòn, hệ thống sẽ **tự động hoàn tác** các giá trị Hao mòn lũy kế và Giá trị còn lại về trạng thái trước khi tính. Chỉ KTTS mới có quyền xóa.
 :::
 

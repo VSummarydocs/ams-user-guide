@@ -43,7 +43,7 @@ Hệ thống phân quyền theo 4 vai trò chính. Mỗi vai trò sẽ thấy gi
 | 🟢 **Kế toán tài sản** | Toàn quyền quản lý tài sản — thêm, sửa, xóa mà không cần chờ duyệt | Toàn hệ thống |
 | 🔵 **Nhân viên** | Xem tài sản trong phòng mình, báo hỏng thiết bị | Phòng ban của mình |
 
-:::tip Mẹo
+:::tip[Mẹo]
 Xem chi tiết bảng quyền hạn đầy đủ tại [Phụ lục — Bảng quyền hạn](/docs/appendix/role-permission-matrix).
 :::
 

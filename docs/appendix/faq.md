@@ -83,7 +83,7 @@ Menu **Báo cáo thống kê** chỉ hiện với vai trò **Giám đốc** và 
 1. Nhấn **"Tải về"** và chờ tải xong.
 2. Nhấn **"Cài đặt và khởi động lại"** — ứng dụng sẽ tự tắt và mở lại với phiên bản mới.
 
-:::tip Mẹo
+:::tip[Mẹo]
 Hãy lưu xong công việc trước khi cập nhật, vì ứng dụng sẽ tự khởi động lại.
 :::
 

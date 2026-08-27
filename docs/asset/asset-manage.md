@@ -58,7 +58,7 @@ Nhấn nút `⋮` → chọn **"Xem chi tiết"** để xem toàn bộ thông ti
 - Thông số kỹ thuật: hãng sản xuất, model, serial, năm sản xuất
 - Thông tin hao mòn: số năm khấu hao, giá trị khấu hao, hao mòn lũy kế
 
-:::tip Mẹo
+:::tip[Mẹo]
 Nhấn chọn 1 dòng tài sản trong bảng → phần bên dưới sẽ hiện **lịch sử thao tác** (ai đã làm gì với tài sản này).
 :::
 
@@ -96,7 +96,7 @@ Nhấn chọn 1 dòng tài sản trong bảng → phần bên dưới sẽ hiệ
 1. Nhấn nút `⋮` → chọn **"Xóa"**.
 2. Nhấn **"Đồng ý"** khi hộp thoại xác nhận hiện ra.
 
-:::warning Lưu ý
+:::warning[Lưu ý]
 Không thể xóa tài sản đang có phiếu điều chuyển, sửa chữa hoặc kiểm kê liên quan. Cần hoàn thành hoặc hủy các phiếu đó trước.
 :::
 

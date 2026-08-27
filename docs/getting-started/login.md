@@ -26,7 +26,7 @@ Nhấp đúp vào biểu tượng **QLTS** trên màn hình Desktop. Chờ vài 
 | **Email** | Email công việc của bạn (VD: `nguyenvana@benhvien.vn`) |
 | **Mật khẩu** | Mật khẩu được cấp khi tạo tài khoản |
 
-:::tip Mẹo
+:::tip[Mẹo]
 Tích vào ô **"Ghi nhớ tôi"** để lần sau không cần nhập lại email và mật khẩu.
 :::
 
@@ -39,7 +39,7 @@ Phía dưới ô mật khẩu có mục **"Địa chỉ máy chủ"** — đây 
 |--------|-------|
 | **Địa chỉ máy chủ** | Nhập địa chỉ server (VD: `https://assets-mngmt.nt-synapta.io.vn`) |
 
-:::warning Lưu ý
+:::warning[Lưu ý]
 Đây là bước bắt buộc. Nếu nhập sai hoặc bỏ trống, bạn sẽ không thể đăng nhập. Hãy hỏi quản trị viên (Admin) nếu bạn không biết địa chỉ này.
 :::
 
